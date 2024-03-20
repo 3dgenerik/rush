@@ -4,35 +4,33 @@ using UnityEngine;
 
 public class EnemyMover : MonoBehaviour
 {
-    [SerializeField] List<Waypoint> path = new();
+    [SerializeField] List<GameObject> path = new();
+    [SerializeField][Range(0f,5f)] float speed = 1f;
 
     void Start()
     {
+        transform.position = path[0].transform.position;
+        transform.LookAt(path[1].transform.position);
         StartCoroutine(FollowPath());
     }
 
     IEnumerator FollowPath(){
-        foreach(Waypoint waypoint in path){
+        foreach(GameObject waypoint in path){
+            Vector3 startPosition = transform.position;
+            Vector3 endPosition = waypoint.transform.position;
+            float percentageMove = 0f;
 
-            // Vector2Int vec = StringToVector(waypoint.name) * 10;
-            // transform.position = new Vector3Int(vec.x, 0, vec.y);
+            transform.LookAt(waypoint.transform.position);
 
-            transform.position = waypoint.transform.position;
-            
-            yield return new WaitForSeconds(1f);
+            while(percentageMove <= 1f){
+                percentageMove+=Time.deltaTime*speed;
+                transform.position = Vector3.Lerp(startPosition, endPosition, percentageMove);
+                yield return new WaitForEndOfFrame();
+            }
+
         }
-
     }
 
-    Vector2Int StringToVector(string vec){
-        string noBraces = vec.Replace("(", "").Replace(")", "");
-        string[] vecValues = noBraces.Split(",");
-
-        int x = int.Parse(vecValues[0]);
-        int y = int.Parse(vecValues[1]);
-
-        return new Vector2Int(x,y);
-    }
 
 
 }
