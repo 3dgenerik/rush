@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMover : MonoBehaviour
 {
     [SerializeField] List<GameObject> path = new();
-    [SerializeField][Range(0f,5f)] float speed = 1f;
+    [SerializeField][Range(0f,5f)] float speed = .2f;
 
     void Start()
     {

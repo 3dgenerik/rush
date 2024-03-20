@@ -8,17 +8,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1044241800775564049, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
+      propertyPath: isPlacable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1174039903041445052, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 7.7231064
       objectReference: {fileID: 0}
     - target: {fileID: 1174039903041445052, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 4.051395
       objectReference: {fileID: 0}
     - target: {fileID: 1174039903041445052, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.75068283
       objectReference: {fileID: 0}
     - target: {fileID: 1174039903041445052, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26,15 +30,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1174039903041445052, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1174039903041445052, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1174039903041445052, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1174039903041445052, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -52,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -2432090755550338912, guid: e618ab8e55a3ed942a408f4d1b7f896e, type: 3}
+    - target: {fileID: 4849791051802565876, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
+      propertyPath: m_text
+      value: (2, 2)
+      objectReference: {fileID: 0}
     - target: {fileID: 7189475576177605182, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
       propertyPath: m_Name
       value: Tile_Road_Straight
