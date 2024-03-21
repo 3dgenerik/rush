@@ -1647,7 +1647,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6024917777965265356, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
       propertyPath: speed
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -6024917777965265356, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
       propertyPath: path.Array.size
@@ -1681,6 +1681,10 @@ PrefabInstance:
       propertyPath: path.Array.data[6]
       value: 
       objectReference: {fileID: 670248228}
+    - target: {fileID: 769451558742757004, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5040643765344069697, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
       propertyPath: m_Name
       value: Ram
@@ -1728,7 +1732,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3396227848790204643, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
 --- !u!1001 &1528424092
 PrefabInstance:
@@ -2256,6 +2263,10 @@ PrefabInstance:
     - target: {fileID: 1174039903041445052, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849791051802565876, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
+      propertyPath: m_text
+      value: (0, 0)
       objectReference: {fileID: 0}
     - target: {fileID: 7189475576177605182, guid: db2037493ee31d5428a7cf1cdfe8f5f8, type: 3}
       propertyPath: m_Name

@@ -316,6 +316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlacable: 1
   tower: {fileID: 3219458064393657486, guid: 8a965e088bae16643aab3d07ccfd5e2e, type: 3}
+  color: {r: 0.16657603, g: 1, b: 0, a: 1}
 --- !u!65 &1650765353028813665
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using Unity.VisualScripting;
 
 [ExecuteInEditMode]
 public class CoordinateLabel : MonoBehaviour
 {
-    Vector2Int coords = new Vector2Int();
+    Vector2Int coords = new();
 
     void Awake() {
         DisplayCoordinates();
@@ -15,10 +16,12 @@ public class CoordinateLabel : MonoBehaviour
 
     }
 
+
     void Update()
     {
         DisplayCoordinates();
         ChangeParentName();
+        ChangeLabelColor();
     }
 
     private void DisplayCoordinates()
@@ -32,7 +35,16 @@ public class CoordinateLabel : MonoBehaviour
         coords.x = Mathf.RoundToInt(parentXPos / editorSnapX);
         coords.y = Mathf.RoundToInt(parentZPos / editorSnapZ);
         GetComponent<TextMeshPro>().text = coords.ToString();
+    }
 
+    private void ChangeLabelColor(){
+        bool isPlacable = GetComponentInParent<Waypoint>().IsPlacable;
+
+        if(isPlacable){
+            GetComponent<TextMeshPro>().color = new Color(0f,1f,0f);
+        }else{
+            GetComponent<TextMeshPro>().color = new Color(1f,0f,0f);
+        }
     }
 
     private void ChangeParentName()

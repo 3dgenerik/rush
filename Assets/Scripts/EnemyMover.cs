@@ -9,10 +9,17 @@ public class EnemyMover : MonoBehaviour
 
     void Start()
     {
-        transform.position = path[0].transform.position;
-        transform.LookAt(path[1].transform.position);
+        ResetPosition();
         StartCoroutine(FollowPath());
     }
+
+    private void ResetPosition()
+    {
+        transform.position = path[0].transform.position;
+        transform.LookAt(path[1].transform.position);
+    }
+
+
 
     IEnumerator FollowPath(){
         foreach(GameObject waypoint in path){
